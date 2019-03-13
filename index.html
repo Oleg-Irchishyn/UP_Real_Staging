@@ -2763,6 +2763,68 @@
  </div>
 </div> 
 
+﻿<div class="contacts">
+ <div class="contacts_inner container">
+  <div class="contacts_wrap">
+   <h2 class="contacts_title wow fadeInUp">
+    Our Contacts
+   </h2>
+   <h3 class="contacts_subtitle wow fadeInUp">
+   Duis a massa vitae diam maximus dictum sit amet nec purus. Morbi a nunc et sapien iaculis tincidunt nec hendrerit 
+   sapien. Cras convallis rhoncus mi eget rhoncus. In fringilla ligula mauris, sed volutpat tellus convallis vel.
+   </h3>
+   <div class="contacts_container">
+    <div class="contacts_container_item main_item wow slideInLeft">
+     <div id="googleMap">
+     </div>
+    </div>
+    <div class="contacts_container_item">
+     <ul class="contacts_listing">
+      <li class="contacts_listing_item wow slideInRight">
+       <img alt="location" src="img/content/location_image.png" width="60" height="60" class="location_img">
+       <span class="descr location_descr">
+        Beverly Hills, CA 90210 
+       <span>
+      </span></span></li>
+      <li class="contacts_listing_item wow slideInRight">
+       <img alt="open hours" src="img/content/hours_image.png" width="60" height="60" class="hours_img">
+       <span class="descr hours_descr">
+       Monday - Friday  
+       from 9:00 to 18:00
+       <span>
+      </span></span></li> 
+      <li class="contacts_listing_item wow slideInRight">
+       <img alt="phone" src="img/content/phone_image.png" width="60" height="60" class="phone_img">
+       <span class="descr phone_descr">
+        <a href="tel:435-234-9867" title="our phone">
+        435-234-9867
+        </a> 
+       <span>
+      </span></span></li> 
+      <li class="contacts_listing_item wow slideInRight">
+       <img alt="mail" src="img/content/mail_image.png" width="60" height="60" class="mail_img">
+       <span class="descr mail_descr">
+        <a href="mailto:info@example.com?subject=Our_Mail" title="Our Mail">
+         info@uprealestate.com
+        </a>
+       <span>
+      </span></span></li>  
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+
+
+ <script>function myMap(){var e={center:new google.maps.LatLng(34.073685,-118.400352),zoom:17,disableDefaultUI:!0},a=new google.maps.Map(document.getElementById("googleMap"),e);a.setOptions({draggable:!0}),a.set("styles",[{featureType:"all",elementType:"labels.icon",stylers:[{visibility:"on"}]},{featureType:"landscape.man_made",elementType:"geometry",stylers:[{color:"#f7f7f7"},{visibility:"on"}]}]);var n={url:"img/ui/marker.png",scaledSize:new google.maps.Size(92,92)},t=new google.maps.InfoWindow({content:'<div id="content"><span>Beverly Hills, CA 90210</span> <span>UP Real Estate HQ</span></div>'}),l=new google.maps.Marker({position:{lat:34.073685,lng:-118.400352},map:a,icon:n,optimized:!1,title:"UP Real Estate HQ"});l.addListener("click",function(){t.open(a,l)})}</script>
+
+
+
+
+
 <footer class="page_footer">
 </footer>
 ﻿<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -2772,6 +2834,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="vendor/wow.min.js"></script>
 <script src="vendor/slick.js"></script>
+<script async defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_OKtvaX_hGiXKfH0xB8YLvpAGdosCdus&callback=myMap"></script>
 <script src="js/main.js"></script>
 </div></body>
 </html>
